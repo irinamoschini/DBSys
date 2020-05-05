@@ -1,0 +1,31 @@
+Script started on 2020-01-20 14:13:26+0100
+-kamet$ make jointest2
+/usr/lib/jvm/java-11-openjdk-amd64/bin/javac -classpath ./.. TestDriver.java JoinTest2.java
+Note: JoinTest2.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java  -classpath ./.. tests.JoinTest2
+Replacer: Clock
+
+**********************Query2c being read *********************
+Query: 
+  SELECT R.col1 Q.col1
+  FROM   R, Q
+  WHERE  R.col3 1 Q.col3
+         AND   R.col4 2    Q.col4
+
+
+
+Any resemblance of persons in this database to people living or dead
+is purely coincidental. The contents of this database do not reflect
+the views of the University, the Computer  Sciences Department or the
+developers...
+
+**********************Query2c starting *********************
+AND
+
+
+Finished joins testing
+join tests completed successfully
+-kamet$ exit
+
+Script done on 2020-01-20 14:13:30+0100

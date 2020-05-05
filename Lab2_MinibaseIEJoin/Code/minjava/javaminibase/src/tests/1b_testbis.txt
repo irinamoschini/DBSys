@@ -1,0 +1,52 @@
+Script started on 2020-01-20 16:37:06+0100
+-kamet$ make jointest2
+/usr/lib/jvm/java-11-openjdk-amd64/bin/javac -classpath ./.. TestDriver.java JoinTest2.java
+Note: JoinTest2.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java  -classpath ./.. tests.JoinTest2
+Replacer: Clock
+
+**********************Query1b being read *********************
+Query: 
+  SELECT R.col3 S.col3
+  FROM   R, S
+  WHERE  R.col4 2 S.col4
+         AND   R.col1 4 S.col1
+
+
+
+Any resemblance of persons in this database to people living or dead
+is purely coincidental. The contents of this database do not reflect
+the views of the University, the Computer  Sciences Department or the
+developers...
+
+**********************Query1b starting *********************
+After Building btree index on Table1.3.
+
+[34149600, 54325566]
+[35052900, 54325566]
+[35060100, 54325566]
+[35664300, 54325566]
+[36168500, 54325566]
+[36289600, 54325566]
+[37737600, 54325566]
+[38707400, 54325566]
+[39979200, 54325566]
+[40624400, 54325566]
+[40649600, 54325566]
+[41854800, 54325566]
+[42049600, 54325566]
+[42049600, 54325566]
+[42068500, 54325566]
+[43312900, 54325566]
+[43400100, 54325566]
+[43727600, 54325566]
+[44318900, 54325566]
+number of outputs = 19
+
+
+Finished joins testing
+join tests completed successfully
+-kamet$ exit
+
+Script done on 2020-01-20 16:37:26+0100
